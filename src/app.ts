@@ -1,4 +1,5 @@
 import * as ng from "angular";
+import {Routes, RouterModule} from '@angular/router';
 
 const appModule = ng.module("inforview", [require<string>("angular-chart")]);
 
@@ -11,7 +12,11 @@ SCBService.injectInto(appModule);
 import { StatApp } from "./components/app";
 import { StatChart } from "./components/stat-chart";
 import { StatSimple } from "./components/stat-simple";
+import { TablesApp } from "./components/tablesApp";
 
 StatApp.injectInto(appModule);
 StatSimple.injectInto(appModule);
 StatChart.injectInto(appModule);
+tablesApp.injectInto(appModule);
+
+

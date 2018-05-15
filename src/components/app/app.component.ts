@@ -1,7 +1,7 @@
 const templateUrl: string = require<string>("file-loader!./app.component.html");
 import { SCBService } from "../../services/scb.service";
 
-const YEARS = [2015, 2010, 2005, 2000, 1995, 1990, 1985, 1980, 1975, 1970];
+const YEARS = [2017, 2016, 2015, 2010, 2005, 2000, 1995, 1990, 1985, 1980, 1975, 1970];
 
 export class StatApp {
 	private selectedYear: number = YEARS[0];

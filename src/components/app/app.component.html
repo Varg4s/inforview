@@ -16,7 +16,11 @@
 </div>
 <div class="container-fluid">
 	<div class="row">
-		<stat-simple value="{{$ctrl.peopleTotal | number}}" description="people alive"></stat-simple>
-		<stat-chart data="$ctrl.genderData" labels="$ctrl.genderLabels" description="gender distribution" type="pie"></stat-chart>
-	</div>
+		<stat-simple value="{{$ctrl.peopleTotal | number}}" description="People alive"></stat-simple>
+        <stat-simple value="{{$ctrl.peopleBorn | number}}" description="People born"></stat-simple>
+        <stat-simple value="{{$ctrl.peopleDead | number}}" description="People died"></stat-simple>
+		<stat-chart data="$ctrl.genderData" labels="$ctrl.genderLabels" description="Gender distribution" type="pie"></stat-chart>
+        <stat-chart data="$ctrl.ageData" labels="$ctrl.ageLabels" description="Age distribution" type="bar"></stat-chart>
+        <stat-chart data="$ctrl.countyPeople" labels="$ctrl.countyLabels" description="Countys" type="doughnut"></stat-chart>
+ 	</div>
 </div>
